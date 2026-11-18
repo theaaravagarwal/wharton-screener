@@ -35,8 +35,8 @@ jobs:
           python3 -m venv "$RUNNER_TEMP/tooling"
           "$RUNNER_TEMP/tooling/bin/python" -m pip install uv==0.9.7
           echo "$RUNNER_TEMP/tooling/bin" >> "$GITHUB_PATH"
-      - run: uv sync --locked
-      - run: uv run --locked pytest -q --disable-warnings tests
+      - run: uv sync --locked --extra handoff
+      - run: uv run --locked --extra handoff pytest -q --disable-warnings tests
       - run: uv run --locked wharton self-test
       - run: sh -n setup.sh .githooks/pre-commit .githooks/pre-push
       - run: uv run --locked ruff check scripts/export_public.py tests/test_public_export.py
