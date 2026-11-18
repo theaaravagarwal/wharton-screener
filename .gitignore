@@ -1,0 +1,97 @@
+__pycache__/
+.DS_Store
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.playwright-cli/
+.pytest_cache/
+.ruff_cache/
+.venv/
+# Local agent worktrees and generated codebase maps are not project source.
+/.claude/
+/.worktrees/
+/graphify-out/
+*.py[cod]
+# Control-plane job database. An index and a work queue, never a source of truth:
+# deleting it costs scheduling history and a rescan, never evidence.
+/control/
+# Generated datasets, reports and exports stay local, including in the private repository.
+data/
+dist/
+output/
+runs/
+# Official competition materials: archived locally, never redistributed through Git.
+# Provenance (source, retrieval time, SHA-256) is recorded in docs/competition-intake.md.
+docs/*.pdf
+# Meeting evidence and exports stay local; retain reproducible builders and instructions.
+/meeting/mats/*
+!/meeting/mats/build_*.py
+!/meeting/mats/README.md
+
+# Machine-specific live profiles remain local; version portable examples instead.
+/configs/screening-bootstrap.yaml
+/configs/screening-daily.yaml
+
+# Acquired data, research packets and generated exports stay local, even in private Git.
+/docs/screener-*/
+/docs/*.json
+/configs/candidates.yaml
+/configs/screen-*-evidence-*.json
+/configs/screening-breadth-evidence-*.json
+/configs/screen-quarter-supplements*.json
+/tests/fixtures/screening_breadth/
+/.agent/
+*.csv
+*.parquet
+*.feather
+*.arrow
+*.sqlite*
+*.db
+
+# Keep acquired facts and dated research notes out of source publication.
+/docs/*
+!/docs/METRICS.md
+!/docs/candidate-methodology.md
+!/docs/codebase-issue-status.md
+!/docs/competition-intake.md
+!/docs/competition.md
+!/docs/control-plane.md
+!/docs/coverage-runtime.md
+!/docs/data-policy.md
+!/docs/execution-methodology.md
+!/docs/factor-methodology.md
+!/docs/git-data-security-research.md
+!/docs/global-methodology.md
+!/docs/growth-methodology.md
+!/docs/paid-data.md
+!/docs/news-service.md
+!/docs/plan-methodology.md
+!/docs/research-protocol-plan-1.md
+!/docs/research-protocol-plan.md
+!/docs/resilience-methodology.md
+!/docs/screening-quickstart.md
+!/docs/screening-score-method.md
+!/docs/screening-service.md
+!/docs/trading-study-methodology.md
+# Preserve reusable case-report builders; their private inputs remain local.
+!/meeting/mats/boba/
+/meeting/mats/boba/*
+!/meeting/mats/boba/build_boba.py
+!/meeting/mats/boba/fetch_boba.py
+
+# Canonical screener rules must travel with the implementation.
+!/docs/SCREENING-MEASURES.md
+
+# Mirror publication-check blocks: news stores, scratch, compressed/line-delimited data.
+/.scratch/
+news/
+!/tests/fixtures/news/
+*.jsonl
+*.ndjson
+*.gz
+*.zst
+
+# Portable setup documentation contains no private research.
+!/docs/standalone-setup.md
+!/docs/results-return.md

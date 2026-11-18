@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+root=$(git rev-parse --show-toplevel)
+python3 "$root/scripts/check_publication.py"
+if ! command -v gitleaks >/dev/null 2>&1; then
+    echo 'Install Gitleaks before committing; see docs/data-policy.md.' >&2
+    exit 1
+fi
+gitleaks git --staged --redact --no-banner --no-color "$root"

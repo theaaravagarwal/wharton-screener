@@ -1,0 +1,9 @@
+{
+  "input": "screening-example-input.json",
+  "state_root": "../runs/screening-demo",
+  "as_of": "2026-10-27",
+  "batch_size": 1000,
+  "acquisition": {
+    "enabled": false
+  }
+}

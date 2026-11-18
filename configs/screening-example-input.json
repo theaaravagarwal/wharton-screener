@@ -1,0 +1,1151 @@
+{
+  "active": [
+    "SYNTH.US"
+  ],
+  "description": "SYNTHETIC OFFLINE CONTRACT DEMO; not investment evidence; no complete risk history or human approvals",
+  "portfolio": {
+    "benchmark": "VT.US",
+    "existing_weights": {},
+    "holdings": [],
+    "weights": {}
+  },
+  "synthetic": true,
+  "universe": [
+    {
+      "evidence": {
+        "capex": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "available_at": "2023-02-01",
+              "currency": "USD",
+              "period": "2022-12-31",
+              "source": "synthetic:annual",
+              "value": -20
+            },
+            {
+              "available_at": "2024-02-01",
+              "currency": "USD",
+              "period": "2023-12-31",
+              "source": "synthetic:annual",
+              "value": -20
+            },
+            {
+              "available_at": "2025-02-01",
+              "currency": "USD",
+              "period": "2024-12-31",
+              "source": "synthetic:annual",
+              "value": -20
+            },
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": -20
+            }
+          ],
+          "verified": true
+        },
+        "diluted_eps": {
+          "available_at": "2026-02-01",
+          "basis": "reported_gaap",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "statement_source": "sec_financials",
+          "value": [
+            {
+              "available_at": "2023-02-01",
+              "currency": "USD",
+              "period": "2022-12-31",
+              "source": "synthetic:annual",
+              "value": 1.0
+            },
+            {
+              "available_at": "2024-02-01",
+              "currency": "USD",
+              "period": "2023-12-31",
+              "source": "synthetic:annual",
+              "value": 1.05
+            },
+            {
+              "available_at": "2025-02-01",
+              "currency": "USD",
+              "period": "2024-12-31",
+              "source": "synthetic:annual",
+              "value": 1.1025
+            },
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": 1.1576250000000001
+            }
+          ],
+          "verified": true
+        },
+        "diluted_shares": {
+          "available_at": "2026-02-01",
+          "basis": "weighted_average_diluted_split_adjusted",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "available_at": "2023-02-01",
+              "currency": "USD",
+              "period": "2022-12-31",
+              "source": "synthetic:annual",
+              "value": 100.0
+            },
+            {
+              "available_at": "2024-02-01",
+              "currency": "USD",
+              "period": "2023-12-31",
+              "source": "synthetic:annual",
+              "value": 102.0
+            },
+            {
+              "available_at": "2025-02-01",
+              "currency": "USD",
+              "period": "2024-12-31",
+              "source": "synthetic:annual",
+              "value": 104.03999999999999
+            },
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": 106.12080000000002
+            }
+          ],
+          "verified": true
+        },
+        "ebitda": {
+          "available_at": "2026-02-01",
+          "currency": "USD",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": 100,
+          "verified": true
+        },
+        "issuer_identity": {
+          "available_at": "2026-10-27",
+          "observed_at": "2026-10-27",
+          "period": "2026-10-27",
+          "source": "SYNTHETIC identity assertion; not a real issuer",
+          "value": {
+            "issuer_id": "synthetic-stock-not-a-real-security",
+            "ticker": "SYNTH.US"
+          },
+          "verified": true
+        },
+        "market_cap_usd": {
+          "available_at": "2026-02-01",
+          "currency": "USD",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": 2000000000.0,
+          "verified": true
+        },
+        "net_debt": {
+          "available_at": "2026-02-01",
+          "currency": "USD",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": 200,
+          "verified": true
+        },
+        "net_income": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": 100
+            }
+          ],
+          "verified": true
+        },
+        "ocf": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "available_at": "2023-02-01",
+              "currency": "USD",
+              "period": "2022-12-31",
+              "source": "synthetic:annual",
+              "value": 120.0
+            },
+            {
+              "available_at": "2024-02-01",
+              "currency": "USD",
+              "period": "2023-12-31",
+              "source": "synthetic:annual",
+              "value": 125.0
+            },
+            {
+              "available_at": "2025-02-01",
+              "currency": "USD",
+              "period": "2024-12-31",
+              "source": "synthetic:annual",
+              "value": 130.25
+            },
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": 135.76250000000002
+            }
+          ],
+          "verified": true
+        },
+        "operating_margin": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "available_at": "2022-02-01",
+              "currency": "USD",
+              "period": "2021-12-31",
+              "source": "synthetic:annual",
+              "value": 0.2
+            },
+            {
+              "available_at": "2023-02-01",
+              "currency": "USD",
+              "period": "2022-12-31",
+              "source": "synthetic:annual",
+              "value": 0.2
+            },
+            {
+              "available_at": "2024-02-01",
+              "currency": "USD",
+              "period": "2023-12-31",
+              "source": "synthetic:annual",
+              "value": 0.2
+            },
+            {
+              "available_at": "2025-02-01",
+              "currency": "USD",
+              "period": "2024-12-31",
+              "source": "synthetic:annual",
+              "value": 0.2
+            },
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": 0.2
+            }
+          ],
+          "verified": true
+        },
+        "organic_growth": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "available_at": "2024-02-01",
+              "currency": "USD",
+              "period": "2023-12-31",
+              "source": "synthetic:annual",
+              "value": 0.04
+            },
+            {
+              "available_at": "2025-02-01",
+              "currency": "USD",
+              "period": "2024-12-31",
+              "source": "synthetic:annual",
+              "value": 0.04
+            },
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": 0.04
+            }
+          ],
+          "verified": true
+        },
+        "own_pe_monthly": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "earnings_available_at": "2021-10-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2021-08-03",
+              "matched": true,
+              "period": "2021-11-01",
+              "price_currency": "USD",
+              "price_date": "2021-11-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2021-11-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2021-09-02",
+              "matched": true,
+              "period": "2021-12-01",
+              "price_currency": "USD",
+              "price_date": "2021-12-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2021-12-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2021-10-03",
+              "matched": true,
+              "period": "2022-01-01",
+              "price_currency": "USD",
+              "price_date": "2022-01-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-01-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2021-11-03",
+              "matched": true,
+              "period": "2022-02-01",
+              "price_currency": "USD",
+              "price_date": "2022-02-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-01-30",
+              "earnings_currency": "USD",
+              "earnings_period": "2021-12-01",
+              "matched": true,
+              "period": "2022-03-01",
+              "price_currency": "USD",
+              "price_date": "2022-03-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-03-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-01-01",
+              "matched": true,
+              "period": "2022-04-01",
+              "price_currency": "USD",
+              "price_date": "2022-04-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-04-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-01-31",
+              "matched": true,
+              "period": "2022-05-01",
+              "price_currency": "USD",
+              "price_date": "2022-05-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-05-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-03-03",
+              "matched": true,
+              "period": "2022-06-01",
+              "price_currency": "USD",
+              "price_date": "2022-06-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-06-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-04-02",
+              "matched": true,
+              "period": "2022-07-01",
+              "price_currency": "USD",
+              "price_date": "2022-07-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-07-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-05-03",
+              "matched": true,
+              "period": "2022-08-01",
+              "price_currency": "USD",
+              "price_date": "2022-08-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-08-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-06-03",
+              "matched": true,
+              "period": "2022-09-01",
+              "price_currency": "USD",
+              "price_date": "2022-09-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-09-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-07-03",
+              "matched": true,
+              "period": "2022-10-01",
+              "price_currency": "USD",
+              "price_date": "2022-10-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-10-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-08-03",
+              "matched": true,
+              "period": "2022-11-01",
+              "price_currency": "USD",
+              "price_date": "2022-11-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-11-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-09-02",
+              "matched": true,
+              "period": "2022-12-01",
+              "price_currency": "USD",
+              "price_date": "2022-12-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2022-12-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-10-03",
+              "matched": true,
+              "period": "2023-01-01",
+              "price_currency": "USD",
+              "price_date": "2023-01-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-01-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-11-03",
+              "matched": true,
+              "period": "2023-02-01",
+              "price_currency": "USD",
+              "price_date": "2023-02-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-01-30",
+              "earnings_currency": "USD",
+              "earnings_period": "2022-12-01",
+              "matched": true,
+              "period": "2023-03-01",
+              "price_currency": "USD",
+              "price_date": "2023-03-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-03-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-01-01",
+              "matched": true,
+              "period": "2023-04-01",
+              "price_currency": "USD",
+              "price_date": "2023-04-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-04-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-01-31",
+              "matched": true,
+              "period": "2023-05-01",
+              "price_currency": "USD",
+              "price_date": "2023-05-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-05-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-03-03",
+              "matched": true,
+              "period": "2023-06-01",
+              "price_currency": "USD",
+              "price_date": "2023-06-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-06-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-04-02",
+              "matched": true,
+              "period": "2023-07-01",
+              "price_currency": "USD",
+              "price_date": "2023-07-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-07-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-05-03",
+              "matched": true,
+              "period": "2023-08-01",
+              "price_currency": "USD",
+              "price_date": "2023-08-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-08-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-06-03",
+              "matched": true,
+              "period": "2023-09-01",
+              "price_currency": "USD",
+              "price_date": "2023-09-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-09-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-07-03",
+              "matched": true,
+              "period": "2023-10-01",
+              "price_currency": "USD",
+              "price_date": "2023-10-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-10-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-08-03",
+              "matched": true,
+              "period": "2023-11-01",
+              "price_currency": "USD",
+              "price_date": "2023-11-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-11-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-09-02",
+              "matched": true,
+              "period": "2023-12-01",
+              "price_currency": "USD",
+              "price_date": "2023-12-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2023-12-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-10-03",
+              "matched": true,
+              "period": "2024-01-01",
+              "price_currency": "USD",
+              "price_date": "2024-01-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-01-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-11-03",
+              "matched": true,
+              "period": "2024-02-01",
+              "price_currency": "USD",
+              "price_date": "2024-02-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-01-31",
+              "earnings_currency": "USD",
+              "earnings_period": "2023-12-02",
+              "matched": true,
+              "period": "2024-03-01",
+              "price_currency": "USD",
+              "price_date": "2024-03-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-03-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-01-02",
+              "matched": true,
+              "period": "2024-04-01",
+              "price_currency": "USD",
+              "price_date": "2024-04-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-04-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-02-01",
+              "matched": true,
+              "period": "2024-05-01",
+              "price_currency": "USD",
+              "price_date": "2024-05-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-05-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-03-03",
+              "matched": true,
+              "period": "2024-06-01",
+              "price_currency": "USD",
+              "price_date": "2024-06-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-06-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-04-02",
+              "matched": true,
+              "period": "2024-07-01",
+              "price_currency": "USD",
+              "price_date": "2024-07-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-07-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-05-03",
+              "matched": true,
+              "period": "2024-08-01",
+              "price_currency": "USD",
+              "price_date": "2024-08-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-08-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-06-03",
+              "matched": true,
+              "period": "2024-09-01",
+              "price_currency": "USD",
+              "price_date": "2024-09-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-09-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-07-03",
+              "matched": true,
+              "period": "2024-10-01",
+              "price_currency": "USD",
+              "price_date": "2024-10-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-10-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-08-03",
+              "matched": true,
+              "period": "2024-11-01",
+              "price_currency": "USD",
+              "price_date": "2024-11-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-11-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-09-02",
+              "matched": true,
+              "period": "2024-12-01",
+              "price_currency": "USD",
+              "price_date": "2024-12-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2024-12-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-10-03",
+              "matched": true,
+              "period": "2025-01-01",
+              "price_currency": "USD",
+              "price_date": "2025-01-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-01-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-11-03",
+              "matched": true,
+              "period": "2025-02-01",
+              "price_currency": "USD",
+              "price_date": "2025-02-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-01-30",
+              "earnings_currency": "USD",
+              "earnings_period": "2024-12-01",
+              "matched": true,
+              "period": "2025-03-01",
+              "price_currency": "USD",
+              "price_date": "2025-03-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-03-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-01-01",
+              "matched": true,
+              "period": "2025-04-01",
+              "price_currency": "USD",
+              "price_date": "2025-04-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-04-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-01-31",
+              "matched": true,
+              "period": "2025-05-01",
+              "price_currency": "USD",
+              "price_date": "2025-05-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-05-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-03-03",
+              "matched": true,
+              "period": "2025-06-01",
+              "price_currency": "USD",
+              "price_date": "2025-06-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-06-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-04-02",
+              "matched": true,
+              "period": "2025-07-01",
+              "price_currency": "USD",
+              "price_date": "2025-07-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-07-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-05-03",
+              "matched": true,
+              "period": "2025-08-01",
+              "price_currency": "USD",
+              "price_date": "2025-08-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-08-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-06-03",
+              "matched": true,
+              "period": "2025-09-01",
+              "price_currency": "USD",
+              "price_date": "2025-09-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-09-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-07-03",
+              "matched": true,
+              "period": "2025-10-01",
+              "price_currency": "USD",
+              "price_date": "2025-10-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-10-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-08-03",
+              "matched": true,
+              "period": "2025-11-01",
+              "price_currency": "USD",
+              "price_date": "2025-11-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-11-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-09-02",
+              "matched": true,
+              "period": "2025-12-01",
+              "price_currency": "USD",
+              "price_date": "2025-12-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2025-12-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-10-03",
+              "matched": true,
+              "period": "2026-01-01",
+              "price_currency": "USD",
+              "price_date": "2026-01-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-01-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-11-03",
+              "matched": true,
+              "period": "2026-02-01",
+              "price_currency": "USD",
+              "price_date": "2026-02-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-01-30",
+              "earnings_currency": "USD",
+              "earnings_period": "2025-12-01",
+              "matched": true,
+              "period": "2026-03-01",
+              "price_currency": "USD",
+              "price_date": "2026-03-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-03-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2026-01-01",
+              "matched": true,
+              "period": "2026-04-01",
+              "price_currency": "USD",
+              "price_date": "2026-04-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-04-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2026-01-31",
+              "matched": true,
+              "period": "2026-05-01",
+              "price_currency": "USD",
+              "price_date": "2026-05-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-05-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2026-03-03",
+              "matched": true,
+              "period": "2026-06-01",
+              "price_currency": "USD",
+              "price_date": "2026-06-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-06-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2026-04-02",
+              "matched": true,
+              "period": "2026-07-01",
+              "price_currency": "USD",
+              "price_date": "2026-07-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-07-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2026-05-03",
+              "matched": true,
+              "period": "2026-08-01",
+              "price_currency": "USD",
+              "price_date": "2026-08-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-08-02",
+              "earnings_currency": "USD",
+              "earnings_period": "2026-06-03",
+              "matched": true,
+              "period": "2026-09-01",
+              "price_currency": "USD",
+              "price_date": "2026-09-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            },
+            {
+              "earnings_available_at": "2026-09-01",
+              "earnings_currency": "USD",
+              "earnings_period": "2026-07-03",
+              "matched": true,
+              "period": "2026-10-01",
+              "price_currency": "USD",
+              "price_date": "2026-10-01",
+              "source": "synthetic:matched monthly",
+              "value": 15
+            }
+          ],
+          "verified": true
+        },
+        "pe": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": 15,
+          "verified": true
+        },
+        "revenue": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": [
+            {
+              "available_at": "2023-02-01",
+              "currency": "USD",
+              "period": "2022-12-31",
+              "source": "synthetic:annual",
+              "value": 100.0
+            },
+            {
+              "available_at": "2024-02-01",
+              "currency": "USD",
+              "period": "2023-12-31",
+              "source": "synthetic:annual",
+              "value": 107.0
+            },
+            {
+              "available_at": "2025-02-01",
+              "currency": "USD",
+              "period": "2024-12-31",
+              "source": "synthetic:annual",
+              "value": 114.49000000000001
+            },
+            {
+              "available_at": "2026-02-01",
+              "currency": "USD",
+              "period": "2025-12-31",
+              "source": "synthetic:annual",
+              "value": 122.50430000000001
+            }
+          ],
+          "verified": true
+        },
+        "sector_pe": {
+          "available_at": "2026-02-01",
+          "observed_at": "2026-10-27",
+          "peer_n": 25,
+          "period": "2025-12-31",
+          "source": "synthetic:test",
+          "value": 15,
+          "verified": true
+        }
+      },
+      "issuer_id": "synthetic-stock-not-a-real-security",
+      "kind": "stock",
+      "region": "synthetic",
+      "review_owner": "synthetic analyst",
+      "reviews": {
+        "breakers": {
+          "annual_review": true,
+          "author": "synthetic author",
+          "citations": [
+            "synthetic:test"
+          ],
+          "items": [
+            {
+              "metric": "revenue growth",
+              "threshold": 0.03
+            },
+            {
+              "metric": "ROIC",
+              "threshold": 0.1
+            }
+          ],
+          "rationale": "SYNTHETIC TEST ONLY",
+          "reviewed_at": "2026-10-27",
+          "reviewer": "synthetic reviewer",
+          "status": "approved"
+        },
+        "capital_allocation": {
+          "author": "synthetic author",
+          "citations": [
+            "synthetic:test"
+          ],
+          "matches_thesis": true,
+          "rationale": "SYNTHETIC TEST ONLY",
+          "reviewed_at": "2026-10-27",
+          "reviewer": "synthetic reviewer",
+          "status": "approved"
+        },
+        "deal": {
+          "author": "synthetic author",
+          "citations": [
+            "synthetic:test"
+          ],
+          "ev_fraction": 0.2,
+          "rationale": "SYNTHETIC TEST ONLY",
+          "retained_business_thesis": "Core survives",
+          "reviewed_at": "2026-10-27",
+          "reviewer": "synthetic reviewer",
+          "status": "approved"
+        },
+        "policy": {
+          "author": "synthetic author",
+          "citations": [
+            "synthetic:test"
+          ],
+          "rationale": "SYNTHETIC TEST ONLY",
+          "reviewed_at": "2026-10-27",
+          "reviewer": "synthetic reviewer",
+          "single_policy_earnings_impact": 0.2,
+          "status": "approved"
+        },
+        "scenarios": {
+          "assumptions": "Conditional business cases",
+          "author": "synthetic author",
+          "citations": [
+            "synthetic:test"
+          ],
+          "costs": ".1% one-way",
+          "dividends": "reinvested",
+          "fx": "USD no change",
+          "horizon_years": 5,
+          "rationale": "SYNTHETIC TEST ONLY",
+          "reviewed_at": "2026-10-27",
+          "reviewer": "synthetic reviewer",
+          "status": "approved",
+          "value": {
+            "base": 0.6105100000000006,
+            "bear": -0.35,
+            "bull": 0.7
+          }
+        },
+        "thesis": {
+          "author": "synthetic author",
+          "citations": [
+            "synthetic:test"
+          ],
+          "not_mainly_ai": true,
+          "rationale": "SYNTHETIC TEST ONLY",
+          "reviewed_at": "2026-10-27",
+          "reviewer": "synthetic reviewer",
+          "status": "approved"
+        }
+      },
+      "sector": "synthetic sector",
+      "ticker": "SYNTH.US"
+    },
+    {
+      "evidence": {
+        "issuer_identity": {
+          "available_at": "2026-10-27",
+          "observed_at": "2026-10-27",
+          "period": "2026-10-27",
+          "source": "SYNTHETIC identity assertion; not a real issuer",
+          "value": {
+            "issuer_id": "synthetic-fund-not-a-real-security",
+            "ticker": "SYNTHETF.US"
+          },
+          "verified": true
+        }
+      },
+      "issuer_id": "synthetic-fund-not-a-real-security",
+      "kind": "etf",
+      "region": "synthetic",
+      "reviews": {
+        "fund": {
+          "author": "synthetic author",
+          "citations": [
+            "synthetic:test"
+          ],
+          "costs": "SYNTHETIC .8% expense ratio",
+          "liquidity": "SYNTHETIC liquidity assertion",
+          "rationale": "SYNTHETIC TEST ONLY",
+          "reviewed_at": "2026-10-27",
+          "reviewer": "synthetic reviewer",
+          "status": "approved",
+          "strategy": "SYNTHETIC managed futures",
+          "structure": "SYNTHETIC ETF structure"
+        }
+      },
+      "sector": "managed futures",
+      "ticker": "SYNTHETF.US"
+    }
+  ]
+}

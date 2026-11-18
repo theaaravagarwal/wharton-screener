@@ -1,0 +1,17 @@
+# Offline synthetic example. Paid acquisition is disabled by default.
+input: screening-example-input.json
+state_root: ../runs/screening-example
+batch_size: 1000
+as_of: '2026-10-28'
+acquisition:
+  enabled: false
+  accounting_mode: account
+  mode: daily
+  initial_credit_limit: 40000
+  daily_working_credit_limit: 50000
+  daily_credit_limit: 75000
+  account_headroom: 25000
+  request_credit_cost:
+    fundamentals: 10
+    prices: 1
+  fundamentals_max_age_days: 7

@@ -1,0 +1,46 @@
+{
+  "description": "Wholly synthetic contracts authored from scratch for offline normalization tests. No acquired response bytes, real issuer identifiers, real filings, or primary-source extracts. Values are round invented test amounts, not transformed provider data.",
+  "synthetic": true,
+  "files": {
+    "synthetic-industrial-10k.json": {
+      "synthetic": true,
+      "purpose": "industrial annual field mapping; annual history",
+      "sha256": "5682ca4186525b9ae37abeec083c93a3f165dcc0b8fe581b5d1a07f48b68b6b0"
+    },
+    "synthetic-industrial-10q.json": {
+      "synthetic": true,
+      "purpose": "industrial quarterly envelope",
+      "sha256": "7fa70801f1916000e993847ec2644bace8ecdb429905a3e9363308c0efed5a29"
+    },
+    "synthetic-insurer-10k.json": {
+      "synthetic": true,
+      "purpose": "insurer annual field mapping; annual history",
+      "sha256": "e30ac900e8d87e242890fce6ac532a93c79d66bff96c1fdaf665bb611946f02b"
+    },
+    "synthetic-insurer-10q.json": {
+      "synthetic": true,
+      "purpose": "insurer quarterly envelope and five-year point-date book coverage",
+      "sha256": "d56f1fb6095f55534ae68cae7e10fb5639af75204729a05b047bdf15711307d8"
+    },
+    "synthetic-bank-10k.json": {
+      "synthetic": true,
+      "purpose": "bank annual field mapping; insufficient four-year history",
+      "sha256": "f7c3907b710ebbd5cbff26980f942b1005fc443dbc9195a7e22811850a2e1598"
+    },
+    "synthetic-bank-10q.json": {
+      "synthetic": true,
+      "purpose": "bank quarterly envelope",
+      "sha256": "0810ac34578f0e06d286bdde7398c507142ff1e627228aebcc957d38ed03e36d"
+    },
+    "synthetic-industrial-eps.json": {
+      "synthetic": true,
+      "purpose": "discrete quarters, annual and YTD durations; Q4 intentionally absent",
+      "sha256": "f5dcb536c18308f74de6283c9155d0c4cb507fb1c9296040274c8def2b4f6d76"
+    },
+    "synthetic-industrial-q4.json": {
+      "synthetic": true,
+      "purpose": "invented discrete Q4 supplements; synthetic sources make no real-world claims",
+      "sha256": "7357346f2d2bdb8a3f6a2371ab818e0a327a49196d6963bfdb7c0bfcc1888ca2"
+    }
+  }
+}

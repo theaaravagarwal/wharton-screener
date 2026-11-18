@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "data": [
+    {
+      "accession_number": "9900000003-26-000002",
+      "period_of_report": "2026-06-30",
+      "filed_at": "2026-08-05",
+      "eps_diluted": 2,
+      "weighted_avg_shares_diluted": 2000000,
+      "revenue": 12000000,
+      "net_income": 4000000,
+      "operating_cash_flow": 4000000,
+      "capital_expenditure": 500000,
+      "ebitda": 5000000,
+      "operating_income": 3000000,
+      "stockholders_equity": 240000000,
+      "goodwill": 8000000,
+      "intangible_assets": 4000000,
+      "shares_outstanding": 2000000
+    }
+  ],
+  "meta": {
+    "page": {
+      "limit": 100,
+      "offset": 0
+    },
+    "total": 1
+  },
+  "links": {
+    "next": null,
+    "previous": null
+  }
+}

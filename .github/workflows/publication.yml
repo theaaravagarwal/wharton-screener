@@ -1,0 +1,55 @@
+name: Source publication policy
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  publication:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - run: python3 scripts/check_publication.py
+      - name: Install pinned secret scanner
+        env:
+          SCANNER_ARCHIVE: ${{ runner.temp }}/gitleaks.tar.gz
+        run: |
+          curl --fail --silent --show-error --location https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz --output "$SCANNER_ARCHIVE"
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  $SCANNER_ARCHIVE" | sha256sum --check
+          tar -xzf "$SCANNER_ARCHIVE" -C "$RUNNER_TEMP" gitleaks
+      - name: Scan complete published history for secrets
+        run: '"$RUNNER_TEMP/gitleaks" git --redact --no-banner --no-color .'
+
+  offline-tests:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install pinned uv in isolated tooling environment
+        run: |
+          python3 -m venv "$RUNNER_TEMP/tooling"
+          "$RUNNER_TEMP/tooling/bin/python" -m pip install uv==0.9.7
+          echo "$RUNNER_TEMP/tooling/bin" >> "$GITHUB_PATH"
+      - run: uv sync --locked
+      - run: uv run --locked pytest -q --disable-warnings tests
+      - run: uv run --locked wharton self-test
+      - run: sh -n setup.sh .githooks/pre-commit .githooks/pre-push
+      - run: uv run --locked ruff check scripts/export_public.py tests/test_public_export.py
+  dependency-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install pinned uv in isolated tooling environment
+        run: |
+          python3 -m venv "$RUNNER_TEMP/tooling"
+          "$RUNNER_TEMP/tooling/bin/python" -m pip install uv==0.9.7
+          echo "$RUNNER_TEMP/tooling/bin" >> "$GITHUB_PATH"
+      - run: uv export --locked --no-dev --no-emit-project --format requirements-txt --output-file /tmp/requirements.txt
+      - run: uvx pip-audit==2.9.0 --requirement /tmp/requirements.txt --disable-pip --no-deps
